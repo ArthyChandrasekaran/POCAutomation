@@ -12,7 +12,7 @@ Scenario Outline: Login to portal using valid credentials
 	And Test completed succesfully
 Examples: 
 | BaseURL | UserName   | PassWord|
-| Client  |mmulcahy1219|Password12|
+| Client  |TestTest|Test|
 
 
 @Client
@@ -23,6 +23,6 @@ Scenario Outline: Login to portal using invalid credentials
 	Then User should get <Error> message
 Examples: 
 | BaseURL | UserName                    | PassWord    | Error                        |
-| Client  | chaturvediankit1993@gmail.com | Test@123456 |Invalid username or password|
+| Client  | Test| Test |Invalid username or password|
 
 
